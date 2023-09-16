@@ -13,7 +13,7 @@ export const projectsData = [
 		title: 'Google Health Platform',
 		url: 'google-health-platform',
 		category: 'Web Application',
-		img: '/images/web-project-2.jpg',
+		img: '/public/images/web-project-2.jpg',
 		ProjectHeader: {
 			title: 'Google Health Platform',
 			publishDate: 'Jul 26, 2021',
@@ -285,7 +285,7 @@ export const projectsData = [
 			{
 				id: uuidv4(),
 				title: 'Kabul Project Management UI',
-				img: '/images/mobile-project-2.jpg',
+				img: '/public/images/mobile-project-2.jpg',
 			},
 		],
 		ProjectInfo: {
