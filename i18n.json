@@ -1,9 +1,0 @@
-{
-  "locales": ["en", "pt"],
-  "defaultLocale": "en",
-  "localeDetection": false,
-  "pages": {
-    "*": ["common", "headerNavLinks", "newsletter", "404", "SEO", "learning"],
-    "/projects": ["projects"]
-  }
-}
