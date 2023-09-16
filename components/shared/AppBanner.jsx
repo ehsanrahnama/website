@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiArrowDownCircle } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
-import darkImage from "../../public/images/logo-dark.svg";
-import lightImage from "../../public/images/logo-light.svg";
+import darkImage from "../../public/images/developer-dark.svg";
+import lightImage from "../../public/images/developer.svg";
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
 
