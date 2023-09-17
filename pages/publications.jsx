@@ -6,7 +6,7 @@ function publications() {
     <div className="container mx-auto">
       <PagesMetaHead title="Projects" />
 
-      <ProjectsGrid />
+      <ProjectsGrid title="Projects portfolio" />
     </div>
   );
 }
