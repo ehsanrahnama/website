@@ -1,42 +1,14 @@
-import { motion } from 'framer-motion';
-import AboutClients from '../components/about/AboutClients';
-import AboutCounter from '../components/about/AboutCounter';
-import AboutMeBio from '../components/about/AboutMeBio';
-import PagesMetaHead from '../components/PagesMetaHead';
+import PagesMetaHead from "../components/PagesMetaHead";
+import ProjectsGrid from "../components/projects/ProjectsGrid";
 
-function about() {
-	return (
-		<div>
-			<PagesMetaHead title="Publications & Certificate" />
+function publications() {
+  return (
+    <div className="container mx-auto">
+      <PagesMetaHead title="Projects" />
 
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
-				className="container mx-auto"
-			>
-				<AboutMeBio />
-			</motion.div>
-
-			{/** Counter without paddings */}
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
-			>
-				<AboutCounter />
-			</motion.div>
-
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
-				className="container mx-auto"
-			>
-				<AboutClients />
-			</motion.div>
-		</div>
-	);
+      <ProjectsGrid />
+    </div>
+  );
 }
 
-export default about;
+export default publications;
