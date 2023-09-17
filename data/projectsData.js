@@ -6,33 +6,33 @@ import {
 	FiTwitter,
 	FiYoutube,
 } from 'react-icons/fi';
-
+import project_nvidia from "../public/images/nvidia_jetson_board.jpg"
 export const projectsData = [
 	{
 		id: 1,
-		title: 'Google Health Platform',
+		title: 'Deploy Models in Nvidia Jetson NX',
 		url: 'google-health-platform',
-		category: 'Web Application',
-		img: '/images/web-project-2.jpg',
+		category: '<br> nxsfmsbgkjedngkjend <strong> dnsbfjwhefbkjw </strong> fdesnmnfkwjnhfkw dshbfvmsbvmsj fdhbfksjbfvsk dmhsbfks\nscdvfjhsvfbjsh',
+		img: project_nvidia,
 		ProjectHeader: {
-			title: 'Google Health Platform',
+			title: 'Deploy Models in Nvidia Jetson NX',
 			publishDate: 'Jul 26, 2021',
-			tags: 'UI / Frontend',
+			tags: 'ML ',
 		},
 		ProjectImages: [
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
+				title: 'Deploy Models in Nvidia Jetson NX',
 				img: '/images/ui-project-1.jpg',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
+				title: 'Deploy Models in Nvidia Jetson NX',
 				img: '/images/web-project-2.jpg',
 			},
 			{
 				id: uuidv4(),
-				title: 'Google Health Platform',
+				title: 'Deploy Models in Nvidia Jetson NX',
 				img: '/images/mobile-project-2.jpg',
 			},
 		],
