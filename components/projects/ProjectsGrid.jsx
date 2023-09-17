@@ -4,7 +4,7 @@ import ProjectSingle from "./ProjectSingle";
 import { projectsData } from "../../data/projectsData";
 import ProjectsFilter from "./ProjectsFilter";
 
-function ProjectsGrid({ title }) {
+function ProjectsGrid({ title, data = [] }) {
   return (
     <section className="py-5 mt-10 min-h-screen">
       <div className="text-center">
@@ -14,7 +14,7 @@ function ProjectsGrid({ title }) {
       </div>
 
       <div className="mt-10">
-        {projectsData.map((project, index) => (
+        {data.map((project, index) => (
           <ProjectSingle key={index} {...project} />
         ))}
       </div>

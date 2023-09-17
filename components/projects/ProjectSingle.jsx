@@ -23,9 +23,10 @@ const ProjectSingle = (props) => {
             {props.title}
           </p>
         </div>
-        <span dangerouslySetInnerHTML={{__html:props.category}} className="text-lg text-ternary-dark dark:text-ternary-light">
-   
-        </span>
+        <span
+          dangerouslySetInnerHTML={{ __html: props.description }}
+          className="text-lg text-ternary-dark dark:text-ternary-light"
+        ></span>
       </div>
     </div>
   );
