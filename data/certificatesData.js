@@ -6,7 +6,7 @@ import {
   FiTwitter,
   FiYoutube,
 } from "react-icons/fi";
-import certificate_ai from "../public/images/certificate_ai.JPG";
+import certificate_ai from "../public/images/certificate_ai.png";
 
 export const certificatesData = [
   {
