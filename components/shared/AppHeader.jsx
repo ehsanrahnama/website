@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import HireMeModal from "../HireMeModal";
-import logo from "../../public/images/Logo_E_1.jpg";
+import logo from "../../public/images/Logo_E_2.jpg";
 
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 

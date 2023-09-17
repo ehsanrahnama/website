@@ -19,22 +19,6 @@ function about() {
 			</motion.div>
 
 			{/** Counter without paddings */}
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
-			>
-				<AboutCounter />
-			</motion.div>
-
-			<motion.div
-				initial={{ opacity: 0 }}
-				animate={{ opacity: 1, delay: 1 }}
-				exit={{ opacity: 0 }}
-				className="container mx-auto"
-			>
-				<AboutClients />
-			</motion.div>
 		</div>
 	);
 }
