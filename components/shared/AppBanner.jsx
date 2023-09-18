@@ -65,14 +65,14 @@ function AppBanner() {
         initial={{ opacity: 0, y: -180 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-        className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
+        className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0 p-15"
       >
         {/* <Image
           layout="responsive"
           src={activeTheme === "dark" ? darkImage : lightImage}
           alt="Developer"
         /> */}
-        <video controls autoPlay loop className="w-full h-full">
+        <video controls autoPlay loop className="w-full h-full rounded-lg">
           <source src={video} />
         </video>
       </motion.div>
