@@ -48,16 +48,15 @@ function AppHeader() {
         <div className="flex justify-between items-center px-4 sm:px-0">
           <div>
             <Link href="/">
-            <Image
-                  src={logo}
-                  className="w-15  cursor-pointer"
-                  alt="logo"
-                  width={50}
-                  height={40}
-                />
+              <Image
+                src={logo}
+                className="w-15  cursor-pointer"
+                alt="logo"
+                width={50}
+                height={40}
+              />
             </Link>
           </div>
-
 
           {/* Small screen hamburger menu */}
           <div className="sm:hidden">
@@ -90,7 +89,7 @@ function AppHeader() {
               : "hidden"
           }
         >
-         <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+          <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
             <Link href="/about" aria-label="About Me">
               About Me
             </Link>
@@ -101,26 +100,16 @@ function AppHeader() {
             </Link>
           </div>
 
-         
           <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
             <Link href="/publications" aria-label="Publications">
-            Publications & Certificates
+              Publications & Certificates
             </Link>
-          </div>
-          <div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-            <button
-              onClick={showHireMeModal}
-              className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
-              aria-label="Hire Me Button"
-            >
-              Hire Me
-            </button>
           </div>
         </div>
 
         {/* Header links large screen */}
         <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
-        <div
+          <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="About Me"
           >
@@ -132,20 +121,16 @@ function AppHeader() {
           >
             <Link href="/projects">Projects</Link>
           </div>
-        
 
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="Publications"
           >
             <Link href="/publications">Publications & Certificates</Link>
-          </div>  
-
+          </div>
         </div>
-
       </div>
-      <div>
-      </div>
+      <div></div>
     </motion.nav>
   );
 }

@@ -6,8 +6,8 @@ const imageStyle = { maxWidth: "100%", height: "auto" };
 
 const ProjectSingle = (props) => {
   return (
-    <div className="mt-20 h-[200px] overflow-hidden rounded-xl flex w-full shadow-lg hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
-      <div className="w-[250px]">
+    <div className="mt-10 h-[220px] overflow-hidden rounded-xl flex w-full shadow-[0_-2px_13px_0px_#00000020] hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
+      <div className="w-[250px] flex justify-center items-center md:mx-10">
         <Image
           src={props.img}
           className="rounded-t-xl border-none h-full"
@@ -24,9 +24,11 @@ const ProjectSingle = (props) => {
           </p>
         </div>
         <span
-          dangerouslySetInnerHTML={{ __html: props.description }}
-          className="text-lg text-ternary-dark dark:text-ternary-light"
-        ></span>
+          // dangerouslySetInnerHTML={{ __html: props.description }}
+          className="text-left text-lg text-ternary-dark dark:text-ternary-light"
+        >
+          {props.description}
+        </span>
       </div>
     </div>
   );
