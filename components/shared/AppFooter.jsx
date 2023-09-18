@@ -11,7 +11,7 @@ const socialLinks = [
   {
     id: 1,
     icon: <FiGlobe />,
-    url: "https://www.stoman.me/",
+    url: "https://scholar.google.com/citations?user=rLL0mxMAAAAJ&hl=en",
   },
   {
     id: 2,

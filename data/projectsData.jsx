@@ -19,16 +19,20 @@ export const projectsData = [
       <>
         <ul>
           <li>
-            conversion of all layers in TensorFlow and changing every function
+            Conversion of all layers in TensorFlow and changing every function
             from PyTorch to TensorFlow to use this methods
           </li>
           <li>
-            resulting in an advanced technique that shrinks the model's size and
-            maintains accuracy
+            Training in INT8 that shrinks the model's size and maintains
+            accuracy
           </li>
-          <li>utilized for deploying models on edge systems</li>
+          <li>Utilized for deploying models on edge systems</li>
         </ul>
-        <a href="https://github.com/ehsanrahnama/QuantizationYolov5">Github</a>
+        <p>
+          <a href="https://github.com/ehsanrahnama/QuantizationYolov5">
+            Github
+          </a>
+        </p>
       </>
     ),
     img: quitization,
@@ -38,8 +42,8 @@ export const projectsData = [
     description: (
       <>
         <ul>
-          <li>Preparing nvidia board and install all dependecy</li> <li></li>
-          Optimizing the model for inference on the Jetson Xavier NX
+          <li>Preparing nvidia board and install all dependecy</li>{" "}
+          <li>Optimizing the model for inference on the Jetson Xavier NX</li>
           <li> Changing the precision of the weight of the model </li>
         </ul>
       </>
@@ -67,8 +71,11 @@ export const projectsData = [
       <>
         <ul>
           <li>Converted yolov4 to tensortRT by using tkDNN</li>
-          <li>Implemented to convert yolov3 to tensorflow</li> <li> </li>Export
-          model to ONNX, torchscript and Saved Model, and Tensorflowlite fromat
+          <li>Implemented to convert yolov3 to tensorflow</li>{" "}
+          <li>
+            Export model to ONNX, torchscript and Saved Model, and
+            Tensorflowlite fromat{" "}
+          </li>
           <li>
             depoly yolov5 on Nvidia Triton servers for using in production
           </li>
