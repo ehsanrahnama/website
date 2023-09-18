@@ -14,7 +14,7 @@ export const publicationsData = [
     title:
       "Industrial Scene Change Detection using Deep Convolutional Neural Networks",
     description: (
-      <>
+      <p>
         locate differences in two scenes using machine vision, the challenge of
         change in lighting conditions and the presence of shadows in the scene,
         and the use of pre-trained deep convolutional networks in a UNET
@@ -22,7 +22,7 @@ export const publicationsData = [
         <strong>Ehsan Rahnama</strong>, Kiavash Azimi, Hassan Shahbaz
         Publication date 2022/12/29{" "}
         <a href="https://arxiv.org/abs/2212.14278">arXiv</a>
-      </>
+      </p>
     ),
     img: article_a2,
   },
@@ -31,7 +31,7 @@ export const publicationsData = [
     title:
       "Localizing the Conceptual Difference of Two Scenes Using Deep Learning for Housekeeping Usages",
     description: (
-      <>
+      <p>
         conceptual differences between two images in an industrial environment
         for HSE purposes, using deep learning methods, transfer learning, and
         structural modification of the error function, Collected a custom
@@ -39,7 +39,7 @@ export const publicationsData = [
         <strong>Ehsan Rahnama</strong>, Kiavash Azimi,
         <br /> Publication date 2022/8/9 <br />{" "}
         <a href="https://arxiv.org/abs/2208.04884">arXiv</a>
-      </>
+      </p>
     ),
     img: article_a1,
   },

@@ -4,6 +4,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import darkImage from "../../public/images/developer-dark.svg";
 import lightImage from "../../public/images/developer.svg";
+import video from "../../public/video/d.webm";
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
 
@@ -12,7 +13,7 @@ function AppBanner() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-      className="flex flex-col sm:justify-between items-center sm:flex-row mt-5 md:mt-2"
+      className="flex min-h-[90vh] flex-col sm:justify-between md:pb-40 items-center sm:flex-row mt-5 md:mt-2"
     >
       <div className="w-full md:w-1/3 text-left">
         <motion.h1
@@ -66,11 +67,14 @@ function AppBanner() {
         transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
         className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0"
       >
-        <Image
+        {/* <Image
           layout="responsive"
           src={activeTheme === "dark" ? darkImage : lightImage}
           alt="Developer"
-        />
+        /> */}
+        <video controls autoPlay loop className="w-full h-full">
+          <source src={video} />
+        </video>
       </motion.div>
     </motion.section>
   );

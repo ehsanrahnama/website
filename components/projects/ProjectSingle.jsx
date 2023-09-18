@@ -6,7 +6,7 @@ const imageStyle = { maxWidth: "100%", height: "auto" };
 
 const ProjectSingle = (props) => {
   return (
-    <div className="mt-10 h-[220px] overflow-hidden rounded-xl flex w-full shadow-[0_-2px_13px_0px_#00000020] hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
+    <div className="mt-10 min-h-[220px] overflow-hidden rounded-xl flex w-full shadow-[0_-2px_13px_0px_#00000020] hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
       <div className="w-[250px] flex justify-center items-center md:mx-10">
         <Image
           src={props.img}
@@ -25,7 +25,7 @@ const ProjectSingle = (props) => {
         </div>
         <span
           // dangerouslySetInnerHTML={{ __html: props.description }}
-          className="text-left text-lg text-ternary-dark dark:text-ternary-light"
+          className="px-5 text-left text-lg text-ternary-dark dark:text-ternary-light"
         >
           {props.description}
         </span>
