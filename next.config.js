@@ -5,7 +5,9 @@ const withVideos = require('next-videos')
 
 module.exports = withVideos({
   reactStrictMode: true,
-  images: {
-    unoptimized: true
-  }
+  experimental: {
+    images: {
+      unoptimized: true,
+    },
+  },
 })
