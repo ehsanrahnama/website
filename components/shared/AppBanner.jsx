@@ -4,7 +4,7 @@ import { FiArrowDownCircle } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 import darkImage from "../../public/images/developer-dark.svg";
 import lightImage from "../../public/images/developer.svg";
-import video from "../../public/video/d.webm";
+// import video from "../../public/video/d.webm";
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
 
@@ -73,7 +73,7 @@ function AppBanner() {
           alt="Developer"
         /> */}
         <video controls autoPlay loop className="w-full h-full rounded-lg">
-          <source src={video} />
+          <source src={`${window.location.origin}/video/d.webm`} />
         </video>
       </motion.div>
     </motion.section>
