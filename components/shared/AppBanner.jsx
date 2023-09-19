@@ -73,7 +73,7 @@ function AppBanner() {
           alt="Developer"
         /> */}
         <video controls autoPlay loop className="w-full h-full rounded-lg">
-          <source src={`${window.location.origin}/video/d.webm`} />
+          <source src={`https://ehsanrahnama.github.io/website/video/d.webm`} />
         </video>
       </motion.div>
     </motion.section>
