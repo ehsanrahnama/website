@@ -5,12 +5,13 @@ import {
   FiGlobe,
   FiYoutube,
 } from "react-icons/fi";
+import { SiGooglescholar } from "react-icons/si";
 import AppFooterCopyright from "./AppFooterCopyright";
 
 const socialLinks = [
   {
     id: 1,
-    icon: <FiGlobe />,
+    icon: <SiGooglescholar />,
     url: "https://scholar.google.com/citations?user=rLL0mxMAAAAJ&hl=en",
   },
   {
