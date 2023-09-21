@@ -6,7 +6,7 @@ const imageStyle = { maxWidth: "100%", height: "auto" };
 
 const ProjectSingle = (props) => {
   return (
-    <div className="mt-10 min-h-[220px] overflow-hidden rounded-xl flex w-full shadow-[0_-2px_13px_0px_#00000020] hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
+    <div className="mt-10 min-h-[220px] md:flex-row flex-col overflow-hidden rounded-xl flex w-full shadow-[0_-2px_13px_0px_#00000020] hover:shadow-xl cursor-pointer bg-secondary-light dark:bg-ternary-dark">
       <div className="w-[250px] flex justify-center items-center md:mx-10">
         <Image
           src={props.img}
