@@ -11,6 +11,6 @@ export const aboutMeData = [
   },
   {
     id: uuidv4(),
-    bio: "Despite being in the early stages of my education, I have accomplished a great deal through hard work and dedication. I am now seeking a doctoral degree in robotics and autonomous systems, leveraging my education in mechanics and my four years of professional experience in computer vision. I am confident that my skills and passion make me a valuable asset to the robotics community.",
+    bio: "Despite being in the early stages of my education, I have accomplished a great deal through hard work and dedication. I am eager to connect and collaborate on machine learning projects, leveraging my self-study in AI and five years of professional experience in computer vision. I am confident that my skills and passion will enable me to make meaningful contributions to the ML community.",
   },
 ];
