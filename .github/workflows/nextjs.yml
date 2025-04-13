@@ -5,6 +5,11 @@ on:
     branches:
       - main # Or your main branch name
 
+permissions:
+  id-token: write
+  pages: write
+  contents: read
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
