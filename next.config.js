@@ -7,6 +7,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  assetPrefix: '/website/', // Replace '/website/' with your repository name if different
 
   reactStrictMode: true,
   swcMinify: true,
