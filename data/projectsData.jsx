@@ -11,21 +11,26 @@ import project_nvidia from "../public/images/nvidia_jetson_board.jpg";
 import quitization from "../public/images/quitization.png";
 import Yolov5 from "../public/images/yologo_2.png";
 import ConvertModel from "../public/images/Convert.png";
+import chatbot from "../public/images/chatbot.jpg";
 
 export const projectsData = [
   {
-    title: "Quantized Yolov5 by Using Quantization-Aware-Training Methods ",
+    title: "Develop HSE Assitance Based on LLM",
     description: (
       <>
         <ul>
           <li>
-            Convert of all NN layers in TensorFlow and change every function
-            from PyTorch to TensorFlow to use this methods
+          Introduced RAG architecture to mitigate hallucination in the HSE Assistance system, enhancing the accuracy and
+          reliability of the system’s responses.
           </li>
           <li>
-            Train in INT8 that shrinks the model's size and maintains accuracy
+          Designed and implemented a vector database on MongoDB Atlas to store and embed PDF ﬁles for eﬃcient retrieval
+          and analysis.
           </li>
-          <li>Utilize for deploying models on edge systems</li>
+          <li>
+          Utilized Amazon Lambda and Gateway API service to deploy a robust RESTful API, seamlessly integrating the HSE
+          Assistance system with the RAG architecture for enhanced performance and scalability.
+            </li>
         </ul>
         {/* <p>
           <a href="https://github.com/ehsanrahnama/QuantizationYolov5">
@@ -34,16 +39,73 @@ export const projectsData = [
         </p> */}
       </>
     ),
-    img: quitization,
+    img: chatbot,
   },
+
   {
-    title: "Deploy Model on Embedded System Jetson NX ",
+    title: "Design Data and Test Platform for AI Teams",
     description: (
       <>
         <ul>
-          <li>Prepare nvidia board and install all dependecy</li>{" "}
-          <li>Optimizie the model for inference on the Jetson Xavier NX</li>
-          <li>Change the precision of the model's weights </li>
+          <li>
+          Developed a comprehensive data platform to manage, store, and organize labeled images and videos, enabling
+          eﬃcient access and retrieval of dataset resources for AI model training.
+          </li>
+          <li>
+          Engineered a robust testing platform for rigorously evaluating AI models’ performance on diverse datasets, fostering
+          consistent and reliable assessment across varying conditions.
+          </li>
+          <li>
+          Utilized Redash to create data visualizations that provided insights into complex datasets.
+          </li>
+        </ul>
+        {/* <p>
+          <a href="https://github.com/ehsanrahnama/QuantizationYolov5">
+            Github
+          </a>
+        </p> */}
+      </>
+    ),
+    img: chatbot,
+  },
+
+
+  
+  {
+    title: "Quantized Yolov5 by Using Quantization-Aware-Training Methods",
+    description: (
+      <>
+        <ul>
+          <li>
+          Created TensorFlow equivalents for each layer in YOLOv5’s detection pipeline and replaced all PyTorch functions
+          used in YOLOv5 with their corresponding TensorFlow implementations.
+          </li>
+          <li>
+          Implemented QAT for all layers, enabling quantization of weights and activations during training, minimizing
+          accuracy loss while reducing model size.
+          </li>
+          <li>
+            Deployed the quantized INT8 model on edge devices and Utilized the trained quantized INT8 model for object
+          detection on edge devices.
+          </li>
+        </ul>
+        <p>
+          <a href="https://github.com/ehsanrahnama/Quantization">
+            Github
+          </a>
+        </p>
+      </>
+    ),
+    img: quitization,
+  },
+  {
+    title: "Deploy Model on Embedded System Jetson NX",
+    description: (
+      <>
+        <ul>
+          <li>Converted YOLOv4 models to TensorRT format using the tkDNN framework to enable high-speed inference on embedded devices.</li>
+          <li>Pruned models and customized its architecture to meet specific performance and deployment constraints, improving both speed and resource efficiency.</li>
+          <li>Configured the NVIDIA Jetson Xavier NX board and installed all required dependencies for model deployment in a resource-constrained environment.</li>
         </ul>
       </>
     ),
@@ -54,33 +116,33 @@ export const projectsData = [
     description: (
       <>
         <ul>
-          <li>Use transfer learning (fine tuning) for training models</li>
+          <li>Applied transfer learning to fine-tune object detection models on domain-specific datasets, resulting in robust performance under dynamic and fluctuating surveillance conditions.</li>
           <li>
-            Prune model and change architecture of model for special usage
+          Collected, augmented, and labeled custom datasets tailored to specific project requirements, ensuring high-quality training data.
           </li>
-          <li>Develop dataset for cutome usage</li>
+          <li>Integrated and deployed trained deep learning models into production environments using TensorFlow Serving and NVIDIA Triton Inference Server, enabling reliable, scalable, and high-performance object detection.</li>
         </ul>
       </>
     ),
     img: Yolov5,
   },
-  {
-    title: "Convert Model to Other Frameworks and Deploy in Production",
-    description: (
-      <>
-        <ul>
-          <li>Convert yolov4 to tensortRT by using tkDNN</li>
-          <li>Implement python code to convert yolov3 to tensorflow</li>{" "}
-          <li>
-            Export model to ONNX, torchscript and saved model, and
-            Tensorflowlite fromat{" "}
-          </li>
-          <li>
-            Depoly yolov5 on Nvidia Triton servers for using in production
-          </li>
-        </ul>
-      </>
-    ),
-    img: ConvertModel,
-  },
+  // {
+  //   title: "Convert Model to Other Frameworks and Deploy in Production",
+  //   description: (
+  //     <>
+  //       <ul>
+  //         <li>Convert yolov4 to tensortRT by using tkDNN</li>
+  //         <li>Implement python code to convert yolov3 to tensorflow</li>{" "}
+  //         <li>
+  //           Export model to ONNX, torchscript and saved model, and
+  //           Tensorflowlite fromat{" "}
+  //         </li>
+  //         <li>
+  //           Depoly yolov5 on Nvidia Triton servers for using in production
+  //         </li>
+  //       </ul>
+  //     </>
+  //   ),
+  //   img: ConvertModel,
+  // },
 ];
