@@ -12,6 +12,7 @@ import quitization from "../public/images/quitization.png";
 import Yolov5 from "../public/images/yologo_2.png";
 import ConvertModel from "../public/images/Convert.png";
 import chatbot from "../public/images/chatbot.jpg";
+import testplatform from "../public/images/TestPlatform.png";
 
 export const projectsData = [
   {
@@ -22,11 +23,11 @@ export const projectsData = [
           <li>
           Introduced RAG architecture to mitigate hallucination in the HSE Assistance system, enhancing the accuracy and
           reliability of the system’s responses.
-          </li>
+          </li>{" "}
           <li>
           Designed and implemented a vector database on MongoDB Atlas to store and embed PDF ﬁles for eﬃcient retrieval
           and analysis.
-          </li>
+          </li>{" "}
           <li>
           Utilized Amazon Lambda and Gateway API service to deploy a robust RESTful API, seamlessly integrating the HSE
           Assistance system with the RAG architecture for enhanced performance and scalability.
@@ -50,11 +51,11 @@ export const projectsData = [
           <li>
           Developed a comprehensive data platform to manage, store, and organize labeled images and videos, enabling
           eﬃcient access and retrieval of dataset resources for AI model training.
-          </li>
+          </li>{" "}
           <li>
           Engineered a robust testing platform for rigorously evaluating AI models’ performance on diverse datasets, fostering
           consistent and reliable assessment across varying conditions.
-          </li>
+          </li>{" "}
           <li>
           Utilized Redash to create data visualizations that provided insights into complex datasets.
           </li>
@@ -66,7 +67,7 @@ export const projectsData = [
         </p> */}
       </>
     ),
-    img: chatbot,
+    img: testplatform,
   },
 
 
@@ -79,13 +80,13 @@ export const projectsData = [
           <li>
           Created TensorFlow equivalents for each layer in YOLOv5’s detection pipeline and replaced all PyTorch functions
           used in YOLOv5 with their corresponding TensorFlow implementations.
-          </li>
+          </li>{" "}
           <li>
           Implemented QAT for all layers, enabling quantization of weights and activations during training, minimizing
           accuracy loss while reducing model size.
-          </li>
+          </li>{" "}
           <li>
-            Deployed the quantized INT8 model on edge devices and Utilized the trained quantized INT8 model for object
+          Deployed the quantized INT8 model on edge devices and Utilized the trained quantized INT8 model for object
           detection on edge devices.
           </li>
         </ul>
@@ -103,9 +104,15 @@ export const projectsData = [
     description: (
       <>
         <ul>
-          <li>Converted YOLOv4 models to TensorRT format using the tkDNN framework to enable high-speed inference on embedded devices.</li>
-          <li>Pruned models and customized its architecture to meet specific performance and deployment constraints, improving both speed and resource efficiency.</li>
-          <li>Configured the NVIDIA Jetson Xavier NX board and installed all required dependencies for model deployment in a resource-constrained environment.</li>
+          <li>
+            Converted YOLOv4 models to TensorRT format using the tkDNN framework to enable high-speed inference on embedded devices.
+          </li>{" "}
+          <li>
+            Pruned models and customized its architecture to meet specific performance and deployment constraints, improving both speed and resource efficiency.
+          </li>{" "}
+          <li>
+            Configured the NVIDIA Jetson Xavier NX board and installed all required dependencies for model deployment in a resource-constrained environment.
+          </li>
         </ul>
       </>
     ),
@@ -116,11 +123,15 @@ export const projectsData = [
     description: (
       <>
         <ul>
-          <li>Applied transfer learning to fine-tune object detection models on domain-specific datasets, resulting in robust performance under dynamic and fluctuating surveillance conditions.</li>
           <li>
-          Collected, augmented, and labeled custom datasets tailored to specific project requirements, ensuring high-quality training data.
+            Applied transfer learning to fine-tune object detection models on domain-specific datasets, resulting in robust performance under dynamic and fluctuating surveillance conditions.
+          </li>{" "}
+          <li>
+            Collected, augmented, and labeled custom datasets tailored to specific project requirements, ensuring high-quality training data.
+          </li>{" "}
+          <li>
+            Integrated and deployed trained deep learning models into production environments using TensorFlow Serving and NVIDIA Triton Inference Server, enabling reliable, scalable, and high-performance object detection.
           </li>
-          <li>Integrated and deployed trained deep learning models into production environments using TensorFlow Serving and NVIDIA Triton Inference Server, enabling reliable, scalable, and high-performance object detection.</li>
         </ul>
       </>
     ),
