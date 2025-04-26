@@ -13,9 +13,11 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+
+
 export default function App({ Component, pageProps }) {
   return (
-    <div className={`${geistSans.className} ${geistMono.className} bg-secondary-light dark:bg-primary-dark transition duration-300`}>
+    <div className={`${geistSans.className} ${geistMono.className}  bg-secondary-light dark:bg-primary-dark transition duration-300`}>
       <DefaultLayout>
         <Component {...pageProps} />
       </DefaultLayout>

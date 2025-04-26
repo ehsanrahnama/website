@@ -17,7 +17,7 @@ const ProjectSingle = (props) => {
       </div>
       <div className="text-center flex-1 ">
         <div className="w-full mt-5 text-left">
-          <p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light">
+          <p className="font-bold text-xl md:text-2xl text-ternary-dark dark:text-ternary-light">
             {props.title}
           </p>
         </div>

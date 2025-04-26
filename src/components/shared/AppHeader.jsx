@@ -6,6 +6,8 @@ import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import HireMeModal from "../HireMeModal";
 import logo from "../../../public/images/Logo_E_2.jpg";
 
+
+
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 function AppHeader() {
@@ -45,20 +47,23 @@ function AppHeader() {
       {/* Header */}
       <div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
         {/* Header menu links and small screen hamburger menu */}
-        <div className="flex justify-between items-center px-4 sm:px-0">
-          <div>
-            <Link href="/">
-              <Image
-                src={logo}
-                className="w-15  cursor-pointer"
-                alt="logo"
-                width={50}
-                height={40}
-              />
-            </Link>
-          </div>
+              <div className="flex justify-between items-center px-4 sm:px-0">
+              <div className="flex items-center">
+                <Link href="/">
+                <Image
+                  src={logo}
+                  className="w-15 cursor-pointer"
+                  alt="logo"
+                  width={50}
+                  height={40}
+                />
+                </Link>
+                {/* <span className="ml-2 text-xl font-bold text-primary-dark dark:text-ternary-light" style={{ lineHeight: '40px' }}>
+                Rahi
+                </span> */}
+              </div>
 
-          {/* Small screen hamburger menu */}
+              {/* Small screen hamburger menu */}
           <div className="sm:hidden">
             <button
               onClick={toggleMenu}
@@ -110,10 +115,15 @@ function AppHeader() {
               Publications & Certificates
             </Link>
           </div>
+          <div className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+            <Link href="/advanture" aria-label="Advanture">
+              Advanture
+            </Link>
+          </div>
         </div>
 
         {/* Header links large screen */}
-        <div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
+        <div className=" hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
           <div
             className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
             aria-label="Home"
@@ -139,6 +149,13 @@ function AppHeader() {
           >
             <Link href="/publications">Publications & Certificates</Link>
           </div>
+
+          <div
+            className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+            aria-label="Advanture">
+            <Link href="/advanture">Advanture</Link>
+          </div>
+
         </div>
       </div>
       <div></div>

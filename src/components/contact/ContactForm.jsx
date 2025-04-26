@@ -11,7 +11,7 @@ function ContactForm() {
 					}}
 					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
-					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
+					<p className=" text-primary-dark dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
 
@@ -61,7 +61,7 @@ function ContactForm() {
 					</div>
 
 					<div className="mt-6">
-						<span className="font-general-medium  px-7 py-4 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
+						<span className="  px-7 py-4 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6 duration-500">
 							<Button
 								title="Send Message"
 								type="submit"

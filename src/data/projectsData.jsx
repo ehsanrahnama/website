@@ -12,12 +12,14 @@ import quitization from "../../public/images/quitization.png";
 import Yolov5 from "../../public/images/yologo_2.png";
 import chatbot from "../../public/images/chatbot.jpg";
 import testplatform from "../../public/images/TestPlatform.png";
+import housekeeping from "../../public/images/article1_localize.png";
+
 
 export const projectsData = [
   {
-    title: "Develop HSE Assitance Based on LLM",
+    title: "Develop HSE Assitance Based on LLM and RAG Architecture",
     description: (
-      <>
+      <div>
         <ul>
           <li>
             Introduced RAG architecture to mitigate hallucination in the HSE
@@ -35,11 +37,11 @@ export const projectsData = [
           </li>
         </ul>
         {/* <p>
-          <a href="https://github.com/ehsanrahnama/QuantizationYolov5">
+          <a href="">
             Github
           </a>
         </p> */}
-      </>
+      </div>
     ),
     img: chatbot,
   },
@@ -65,13 +67,38 @@ export const projectsData = [
           </li>
         </ul>
         {/* <p>
-          <a href="https://github.com/ehsanrahnama/QuantizationYolov5">
+          <a href="">
             Github
           </a>
         </p> */}
       </>
     ),
     img: testplatform,
+  },
+
+  {
+    title: "Localize the Conceptual Difference for HSE Monitoring in Industrial Environments",
+    description: (
+      <>
+        <ul>
+          <li>
+          Developed a deep learning-based method using transfer learning and custom loss functions to detect and classify conceptual differences between industrial scene images.
+          </li>{" "}
+          <li>
+          Designed and labeled a specialized dataset, incorporating data augmentation techniques to address challenges such as lighting variations and object diversity.
+          </li>{" "}
+          <li>
+          Evaluated the model's performance on real industrial data, demonstrating its effectiveness and practical applicability for Health, Safety, and Environment (HSE) monitoring.
+          </li>
+        </ul>
+        <p>
+          <a href="https://arxiv.org/abs/2208.04884">
+            arXiv
+          </a>
+        </p>
+      </>
+    ),
+    img: housekeeping,
   },
 
   {

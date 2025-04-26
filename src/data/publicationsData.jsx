@@ -8,6 +8,10 @@ import {
 } from "react-icons/fi";
 import article_a1 from "../../public/images/article1_localize.png";
 import article_a2 from "../../public/images/article2_industrial.png";
+import journal3 from "../../public/images/journal3.png";
+import journal1 from "../../public/images/journal1-1.png";  
+import journal2 from "../../public/images/journal2-2.png";
+
 
 export const publicationsData = [
   {
@@ -33,19 +37,37 @@ export const publicationsData = [
 
   {
     title:
-      "Localizing the Conceptual Difference of Two Scenes Using Deep Learning for Housekeeping Usages",
+      "A new systematic decision support framework based on solar extended exergy accounting performance to prioritize photovoltaic sites",
     description: (
       <p>
-        conceptual differences between two images in an industrial environment
-        for HSE purposes, using deep learning methods, transfer learning, and
-        structural modification of the error function, Collected a custom
-        dataset and established a new procedure for labeling images.
+        propose a new decision support framework based on extended exergy accounting to 
+        prioritize PV site selection from environmental, technical, financial, 
+        and social perspectives; evaluate a 500 kW grid-connected PV system across different Iranian 
+        climates using real year-round data; show that extended exergy accounting offers 
+        more effective site ranking than traditional metrics like irradiance, power generation, 
+        and exergy efficiency.
         <br />
-        <br /> Ali Atghaei, <strong>Ehsan Rahnama</strong>, Kiavash Azimi,
-        <br /> Publication date 2022/8/9 {"    "}
-        <a href="https://arxiv.org/abs/2208.04884">arXiv</a>
+        <br /> Mortaza Aghbashlo, Meisam Tabatabaei, <strong>Ehsan Rahnama</strong>, Marc A Rosen,
+        <br /> Publication date 2020/5/20 {"    "}
+        <a href="https://doi.org/10.1016/j.jclepro.2020.120356">ScienceDirect</a>
       </p>
     ),
-    img: article_a1,
+    img: journal2,
+  },
+
+  {
+    title:
+      "Spatio-temporal solar exergoeconomic and exergoenvironmental maps for photovoltaic systems",
+    description: (
+      <p>
+        develop solar exergoeconomic and exergoenvironmental maps to assess photovoltaic system performance; evaluate a 100 kW grid-connected PV plant across various Iranian cities using real climatic, economic, and environmental data; 
+        demonstrate that the new maps offer more reliable site selection and sizing than traditional exergy efficiency maps.
+        <br />
+        <br /><strong>Ehsan Rahnama</strong>, Mortaza Aghbashlo, Meisam Tabatabaei, Majid Khanali, Marc A. Rosen,
+        <br /> Publication date 2019/9/1 {"    "}
+        <a href="https://doi.org/10.1016/j.enconman.2019.05.051">ScienceDirect</a>
+      </p>
+    ),
+    img: journal1 // Two images in one box
   },
 ];
