@@ -28,13 +28,10 @@ jobs:
       - name: Build Next.js app
         run: npx next build
 
-      - name: Export static site
-        run: npx next export
-
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./out
+          path: ./out # Next.js will output the static files to the 'out' directory
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
