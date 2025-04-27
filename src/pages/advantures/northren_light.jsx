@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import PagesMetaHead from '../components/PagesMetaHead';
+import PagesMetaHead from '../../components/PagesMetaHead';
 
 function Advanture() {
     return (

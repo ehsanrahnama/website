@@ -18,18 +18,19 @@ import housekeeping from "../../public/images/article1_localize.png";
 export const projectsData = [
   {
     title: "Develop HSE Assitance Based on LLM and RAG Architecture",
+    tags:  ["Python", "MongoDB", "AWS", "LangChain", "OpenAI"],
     description: (
       <div>
-        <ul>
+        <ul className="list-disc space-y-4">
           <li>
             Introduced RAG architecture to mitigate hallucination in the HSE
             Assistance system, enhancing the accuracy and reliability of the
             system’s responses.
-          </li>{" "}
+          </li>{"  "}
           <li>
             Designed and implemented a vector database on MongoDB Atlas to store
             and embed PDF ﬁles for eﬃcient retrieval and analysis.
-          </li>{" "}
+          </li>{"  "}
           <li>
             Utilized Amazon Lambda and Gateway API service to deploy a robust
             RESTful API, seamlessly integrating the HSE Assistance system with
@@ -48,9 +49,10 @@ export const projectsData = [
 
   {
     title: "Design Data and Test Platform for AI Teams",
+    tags:  ["ree", "dasf", "df", "sfgd", "fdsf"],
     description: (
       <>
-        <ul>
+        <ul className="list-disc space-y-4">
           <li>
             Developed a comprehensive data platform to manage, store, and
             organize labeled images and videos, enabling eﬃcient access and
@@ -80,7 +82,7 @@ export const projectsData = [
     title: "Localize the Conceptual Difference for HSE Monitoring in Industrial Environments",
     description: (
       <>
-        <ul>
+        <ul className="list-disc space-y-4">
           <li>
           Developed a deep learning-based method using transfer learning and custom loss functions to detect and classify conceptual differences between industrial scene images.
           </li>{" "}
@@ -91,8 +93,8 @@ export const projectsData = [
           Evaluated the model's performance on real industrial data, demonstrating its effectiveness and practical applicability for Health, Safety, and Environment (HSE) monitoring.
           </li>
         </ul>
-        <p>
-          <a href="https://arxiv.org/abs/2208.04884">
+        <p className="mt-6">
+          <a target="_blank" className="!font-bold  !text-blue-500" href="https://arxiv.org/abs/2208.04884">
             arXiv
           </a>
         </p>
