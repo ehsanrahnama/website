@@ -13,6 +13,7 @@ import Yolov5 from "../../public/images/yologo_2.png";
 import chatbot from "../../public/images/chatbot.jpg";
 import testplatform from "../../public/images/TestPlatform.png";
 import housekeeping from "../../public/images/article1_localize.png";
+import ConvertModel from "../../public/images/Convert.png"
 
 
 export const projectsData = [
@@ -95,7 +96,7 @@ export const projectsData = [
           </li>
         </ul>
         <p className="mt-6">
-          <a target="_blank" className="!font-bold !text-blue-500" href="https://arxiv.org/abs/2208.04884">
+          <a target="_blank" className="!font-bold !text-blue-800" href="https://arxiv.org/abs/2208.04884">
             arXiv
           </a>
         </p>
@@ -126,7 +127,7 @@ export const projectsData = [
           </li>
         </ul>
         <p className="mt-6">
-         <a target="_blank" className="!font-bold  !text-blue-500" href="https://github.com/ehsanrahnama/Quantization">Github</a>
+         <a target="_blank" className="!font-bold  !text-blue-800" href="https://github.com/ehsanrahnama/Quantization">Github</a>
         </p>
       </>
     ),
@@ -185,18 +186,13 @@ export const projectsData = [
   },
   {
     title: "Convert Model to Other Frameworks and Deploy in Production",
+    tags: ["Nvidia Triton", "Tensorflow Serving", "GRPC"],
     description: (
       <>
-        <ul>
-          <li>Convert yolov4 to tensortRT by using tkDNN</li>
-          <li>Implement python code to convert yolov3 to tensorflow</li>{" "}
-          <li>
-            Export model to ONNX, torchscript and saved model, and
-            Tensorflowlite fromat{" "}
-          </li>
-          <li>
-            Depoly yolov5 on Nvidia Triton servers for using in production
-          </li>
+        <ul className="list-disc space-y-4">
+        <li>Depoly DL Model on Nvidia Triton servers for using in production</li>  
+        <li>Export model to ONNX, torchscript and saved model, and Tensorflowlite fromat</li>
+        <li>Implement python code to convert yolov3 to tensorflow and serve by tensorflow serving</li>
         </ul>
       </>
     ),

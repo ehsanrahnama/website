@@ -29,7 +29,7 @@ export const publicationsData = [
         Shahbaz
         <br className="" />
         Publication date 2022/12/29 {"   "}
-        <a href="https://arxiv.org/abs/2212.14278">arXiv</a>
+        <a target="_blank" className="!font-bold !text-blue-800" href="https://arxiv.org/abs/2212.14278">arXiv</a>
       </p>
     ),
     img: article_a2,
@@ -49,7 +49,7 @@ export const publicationsData = [
         <br />
         <br /> Mortaza Aghbashlo, Meisam Tabatabaei, <strong>Ehsan Rahnama</strong>, Marc A Rosen,
         <br /> Publication date 2020/5/20 {"    "}
-        <a href="https://doi.org/10.1016/j.jclepro.2020.120356">ScienceDirect</a>
+        <a target="_blank" className="!font-bold !text-blue-800" href="https://doi.org/10.1016/j.jclepro.2020.120356">ScienceDirect</a>
       </p>
     ),
     img: journal2,
@@ -65,7 +65,7 @@ export const publicationsData = [
         <br />
         <br /><strong>Ehsan Rahnama</strong>, Mortaza Aghbashlo, Meisam Tabatabaei, Majid Khanali, Marc A. Rosen,
         <br /> Publication date 2019/9/1 {"    "}
-        <a href="https://doi.org/10.1016/j.enconman.2019.05.051">ScienceDirect</a>
+        <a target="_blank" className="!font-bold !text-blue-800" href="https://doi.org/10.1016/j.enconman.2019.05.051">ScienceDirect</a>
       </p>
     ),
     img: journal1 // Two images in one box

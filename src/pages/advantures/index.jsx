@@ -1,6 +1,6 @@
 import Link from "next/link";
 import PagesMetaHead from "../../components/PagesMetaHead";
-import northren_light_img  from "../../public/images/north_light1.JPG"; 
+// import northren_light_img  from "../../public/images/north_light1.JPG"; 
 
 
 function advantures() {
