@@ -32,17 +32,17 @@ function northren_light() {
                   </h2>
                 )}
                 {section.content.map((paragraph, idx) => (
-                <div key={idx} className="flex items-start mb-6">
-                  <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
-                  {idx >= 1 && idx <= 6 && (
-                    <Image
-                      src={`/images/northern_light${idx}.jpg`}
-                      width={100}
-                      height={100}
-                      alt={`kish dive ${idx}`}
-                      className="w-1/3 ml-4 rounded shadow-lg"
-                    />
-                  )}
+                  <div key={idx} className="flex items-start mb-6">
+                    <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
+                    {idx === 0 && index > 0 && index % 2 === 0 && (
+                      <Image
+                        src={`/images/northern_light${index}.jpg`}
+                        width={100}
+                        height={100}
+                        alt={`northern light ${index}`}
+                        className="w-1/3 ml-4 rounded shadow-lg"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
