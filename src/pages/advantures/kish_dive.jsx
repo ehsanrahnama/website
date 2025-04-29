@@ -1,14 +1,15 @@
 import { motion } from "framer-motion";
 import PagesMetaHead from "../../components/PagesMetaHead";
-import northernLightsData from "../../data/northernLightsData.json";
+import kishDiveData from "../../data/kishDive.json";
 import Image from "next/image";
 
-function northren_light() {
-  const { title, sections } = northernLightsData;
+function kish_dive() {
+  const { title, sections } =  kishDiveData 
+  ;
 
   return (
     <div>
-      <PagesMetaHead title="northren_light" />
+      <PagesMetaHead title="kish_dive" />
 
       <motion.div
         initial={{ opacity: 0 }}
@@ -32,17 +33,17 @@ function northren_light() {
                   </h2>
                 )}
                 {section.content.map((paragraph, idx) => (
-                <div key={idx} className="flex items-start mb-6">
-                  <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
-                  {idx >= 1 && idx <= 6 && (
-                    <Image
-                      src={`/images/northern_light${idx}.jpg`}
-                      width={100}
-                      height={100}
-                      alt={`kish dive ${idx}`}
-                      className="w-1/3 ml-4 rounded shadow-lg"
-                    />
-                  )}
+                  <div key={idx} className="flex items-start mb-6">
+                    <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
+                    {idx >= 1 && idx <= 5 && (
+                      <Image
+                        src={`/images/kish_dive${idx}.jpg`}
+                        width={100}
+                        height={100}
+                        alt={`kish dive ${idx}`}
+                        className="w-1/3 ml-4 rounded shadow-lg"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
@@ -54,4 +55,4 @@ function northren_light() {
   );
 }
 
-export default northren_light;
+export default kish_dive;

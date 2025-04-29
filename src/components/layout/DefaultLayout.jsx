@@ -8,7 +8,7 @@ const DefaultLayout = ({ children }) => {
     <AnimatePresence>
       <PagesMetaHead />
       <AppHeader />
-      <div>{children}</div>
+      {children}
       <AppFooter />
     </AnimatePresence>
   );

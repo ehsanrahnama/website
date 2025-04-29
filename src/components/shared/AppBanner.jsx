@@ -6,7 +6,10 @@ import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
 
+  
   return (
+    
+      
     <motion.section
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
@@ -34,7 +37,7 @@ function AppBanner() {
             duration: 0.9,
             delay: 0.2,
           }}
-          className=" mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-450"
+          className=" mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-blue-800 dark:text-gray-450"
         >
           ML Engineer
         </motion.p>
@@ -75,6 +78,7 @@ function AppBanner() {
         </video>
       </motion.div>
     </motion.section>
+
   );
 }
 

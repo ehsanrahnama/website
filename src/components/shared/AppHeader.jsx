@@ -4,7 +4,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import HireMeModal from "../HireMeModal";
-import logo from "../../../public/images/Logo_E_2.jpg";
+// import logo from "../../../public/images/Logo_E_2.jpg";
+import logo from "../../../public/images/logo1.png";
+
 
 
 
@@ -52,10 +54,10 @@ function AppHeader() {
                 <Link href="/">
                 <Image
                   src={logo}
-                  className="w-15 cursor-pointer"
+                  className="w-30 cursor-pointer"
                   alt="logo"
-                  width={50}
-                  height={40}
+                  width={500}
+                  height={300}
                 />
                 </Link>
                 {/* <span className="ml-2 text-xl font-bold text-primary-dark dark:text-ternary-light" style={{ lineHeight: '40px' }}>
