@@ -3,7 +3,7 @@ import PagesMetaHead from "../../components/PagesMetaHead";
 import Image from "next/image";
 // import northren_light_img  from "../../public/images/north_light1.JPG";
 
-function advantures() {
+function Adventures() {
   return (
     <div className="container mx-auto">
       <PagesMetaHead title="Advantures" />
@@ -64,4 +64,4 @@ function advantures() {
   );
 }
 
-export default advantures;
+export default Adventures;

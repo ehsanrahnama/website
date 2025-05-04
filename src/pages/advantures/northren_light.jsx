@@ -3,7 +3,7 @@ import PagesMetaHead from "../../components/PagesMetaHead";
 import northernLightsData from "../../data/northernLightsData.json";
 import Image from "next/image";
 
-function northren_light() {
+function NorthernLight() {
   const { title, sections } = northernLightsData;
 
   return (
@@ -54,4 +54,4 @@ function northren_light() {
   );
 }
 
-export default northren_light;
+export default NorthernLight;

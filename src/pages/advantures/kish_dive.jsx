@@ -3,7 +3,7 @@ import PagesMetaHead from "../../components/PagesMetaHead";
 import kishDiveData from "../../data/kishDive.json";
 import Image from "next/image";
 
-function kish_dive() {
+function KishDive() {
   const { title, sections } = kishDiveData;
   return (
     <div>
@@ -53,4 +53,4 @@ function kish_dive() {
   );
 }
 
-export default kish_dive;
+export default KishDive;

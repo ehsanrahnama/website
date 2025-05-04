@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { FiArrowDownCircle } from "react-icons/fi";
 import useThemeSwitcher from "../../hooks/useThemeSwitcher";
+import AppVideoPlayer from "./AppVideoPlayer";
+// import AppVideoPlayer from "./AppVideoPlayer";
 // import video from "../../public/video/d.webm";
 function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
@@ -66,18 +68,14 @@ function AppBanner() {
           initial={{ opacity: 0, y: -180 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-          className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0 p-15"
+          className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0 p-15 justify-center items-center flex"
         >
-          {/* <Image
-          layout="responsive"
-          src={activeTheme === "dark" ? darkImage : lightImage}
-          alt="Developer"
-          /> */}
-          <video controls autoPlay loop className="w-full h-full rounded-lg">
-            <source
-              src={`https://ehsanrahnama.github.io/website/video/d.webm`}
-            />
-          </video>
+          <AppVideoPlayer
+            size={600}
+            poster="/website/images/ehsan.png"
+            src={`https://ehsanrahnama.github.io/website/video/d.webm`}
+            boundaryColor="#3F0E40"
+          ></AppVideoPlayer>
         </motion.div>
       </motion.section>
     </div>

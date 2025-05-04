@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "./videoPLayer.css";
 
 @theme inline {
   --font-sans: var(--font-geist-sans);

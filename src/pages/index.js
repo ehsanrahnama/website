@@ -5,7 +5,7 @@ import { certificatesData } from "@/data/certificatesData";
 import { projectsData } from "@/data/projectsData";
 import { publicationsData } from "@/data/publicationsData";
 
-export default function Home() {
+const Home = () => {
   return (
     <div
       className={`items-center w-full justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]`}
@@ -14,7 +14,6 @@ export default function Home() {
 
       <AppBanner />
       <div className="container mx-auto p-8 pb-20 gap-16 sm:p-20 ">
-
         <ProjectsGrid title={"Projects"} data={projectsData} />
         <ProjectsGrid title={"Certificates"} data={certificatesData} />
 
@@ -23,3 +22,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;

@@ -4,7 +4,7 @@ import ProjectsGrid from "../components/projects/ProjectsGrid";
 import { publicationsData } from "../data/publicationsData";
 import { certificatesData } from "../data/certificatesData";
 
-function publications() {
+function Publications() {
   return (
     <div className="container mx-auto">
       <PagesMetaHead title="Publications & Certificates" />
@@ -15,4 +15,4 @@ function publications() {
   );
 }
 
-export default publications;
+export default Publications;
