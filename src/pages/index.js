@@ -8,16 +8,15 @@ import { publicationsData } from "@/data/publicationsData";
 export default function Home() {
   return (
     <div
-      className={`items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]`}
+      className={`items-center w-full justify-items-center min-h-screen font-[family-name:var(--font-geist-sans)]`}
     >
-      <div className="container mx-auto">
-        <PagesMetaHead title="Home" />
+      <PagesMetaHead title="Home" />
 
-        <AppBanner />
+      <AppBanner />
+      <div className="container mx-auto p-8 pb-20 gap-16 sm:p-20 ">
+
         <ProjectsGrid title={"Projects"} data={projectsData} />
         <ProjectsGrid title={"Certificates"} data={certificatesData} />
-        <ProjectsGrid title={"Publications"} data={publicationsData} />
-
 
         <div className="mt-10 sm:mt-15 flex justify-center"></div>
       </div>
