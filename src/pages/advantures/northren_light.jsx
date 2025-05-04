@@ -36,7 +36,7 @@ function northren_light() {
                     <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
                     {idx === 0 && index > 0 && index % 2 === 0 && (
                       <Image
-                        src={`/images/northern_light${index}.jpg`}
+                        src={`/website/images/northern_light${index}.jpg`}
                         width={100}
                         height={100}
                         alt={`northern light ${index}`}

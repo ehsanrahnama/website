@@ -7,7 +7,7 @@ function AppBanner() {
   const [activeTheme] = useThemeSwitcher();
 
   return (
-    <div className="w-full bg-[url('/images/bg1.jpg')] bg-center bg-cover bg-no-repeat h-[90vh] sm:h-[80vh] md:h-[90vh] lg:h-[100vh] xl:h-[100vh]">
+    <div className="w-full bg-[url('/website/images/bg1.jpg')] bg-center bg-cover bg-no-repeat h-[90vh] sm:h-[80vh] md:h-[90vh] lg:h-[100vh] xl:h-[100vh]">
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}

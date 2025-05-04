@@ -4,9 +4,7 @@ import kishDiveData from "../../data/kishDive.json";
 import Image from "next/image";
 
 function kish_dive() {
-  const { title, sections } =  kishDiveData 
-  ;
-
+  const { title, sections } = kishDiveData;
   return (
     <div>
       <PagesMetaHead title="kish_dive" />
@@ -37,7 +35,7 @@ function kish_dive() {
                     <p className="text-gray-700 text-lg flex-1">{paragraph}</p>
                     {idx >= 1 && idx <= 5 && (
                       <Image
-                        src={`/images/kish_dive${idx}.jpg`}
+                        src={`/website/images/kish_dive${idx}.jpg`}
                         width={100}
                         height={100}
                         alt={`kish dive ${idx}`}
