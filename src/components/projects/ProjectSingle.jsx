@@ -17,9 +17,17 @@ const ProjectSingle = (props) => {
       </div>
       <div className="text-center flex-1 ">
         <div className="w-full mt-5 text-left">
-          <p className="font-general-medium text-xl md:text-2xl text-ternary-dark dark:text-ternary-light">
+          <p className="font-bold text-xl md:text-2xl text-ternary-dark dark:text-ternary-light mb-3">
             {props.title}
           </p>
+          {props?.tags?.map((tag, index) => (
+            <span
+              key={index}
+              className="inline-block bg-gray-300 text-black text-sm font-semibold mr-2 px-2.5 py-0.5 rounded"
+            >
+              {tag}
+            </span>
+          ))}
         </div>
         <span
           // dangerouslySetInnerHTML={{ __html: props.description }}

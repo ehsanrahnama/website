@@ -15,7 +15,7 @@ function HireMeModal({ onClose, onRequest }) {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      className="font-general-medium fixed inset-0 z-30 transition-all duration-500"
+      className=" fixed inset-0 z-30 transition-all duration-500"
     >
       {/* Modal Backdrop */}
       <div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>

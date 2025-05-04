@@ -14,10 +14,10 @@ export default function Home() {
         <PagesMetaHead title="Home" />
 
         <AppBanner />
-
-        <ProjectsGrid title={"Publications"} data={publicationsData} />
-        <ProjectsGrid title={"Certificates"} data={certificatesData} />
         <ProjectsGrid title={"Projects"} data={projectsData} />
+        <ProjectsGrid title={"Certificates"} data={certificatesData} />
+        <ProjectsGrid title={"Publications"} data={publicationsData} />
+
 
         <div className="mt-10 sm:mt-15 flex justify-center"></div>
       </div>
