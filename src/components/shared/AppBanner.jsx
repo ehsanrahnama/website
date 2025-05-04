@@ -73,7 +73,7 @@ function AppBanner() {
           <AppVideoPlayer
             size={600}
             poster="/website/images/ehsan.png"
-            src={`https://ehsanrahnama.github.io/website/video/d.webm`}
+            src={`https://ehsanrahnama.github.io/website/video/intro.webm`}
             boundaryColor="#3F0E40"
           ></AppVideoPlayer>
         </motion.div>
