@@ -4,13 +4,14 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { FiSun, FiMoon, FiX, FiMenu } from "react-icons/fi";
 import HireMeModal from "../HireMeModal";
+import useThemeSwitcher from "../../hooks/useThemeSwitcher";
+import { FiLinkedin, FiGithub } from "react-icons/fi";
 // import logo from "../../../public/images/Logo_E_2.jpg";
 import logo from "../../../public/images/logo1.png";
 
 
 
 
-import useThemeSwitcher from "../../hooks/useThemeSwitcher";
 
 function AppHeader() {
   const [showMenu, setShowMenu] = useState(false);
@@ -39,6 +40,30 @@ function AppHeader() {
     }
   }
 
+  function renderSocialIcons() {
+    return (
+      <div className="flex items-center space-x-4">
+        <a
+          href="https://www.linkedin.com/in/ehsan-rahnama-05294154"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          className="text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light"
+        >
+          <FiLinkedin className="text-2xl" />
+        </a>
+        <a
+          href="https://github.com/ehsanrahnama"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          className="text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light"
+        >
+          <FiGithub className="text-2xl" />
+        </a>
+      </div>
+    );
+  }
   return (
     <motion.nav
       initial={{ opacity: 0 }}
@@ -158,6 +183,10 @@ function AppHeader() {
             <Link href="/advantures">Advantures</Link>
           </div>
 
+        </div>
+        {/* Social Icons */}
+        <div className="flex justify-center mt-4 sm:mt-0">
+          {renderSocialIcons()}
         </div>
       </div>
       <div></div>
