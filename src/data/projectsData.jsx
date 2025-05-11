@@ -69,11 +69,11 @@ export const projectsData = [
             into complex datasets.
           </li>
         </ul>
-        {/* <p>
-          <a href="">
-            Github
+        <p className="mt-6">
+          <a target="_blank" className="!font-bold !text-blue-800"  href="https://youtu.be/eWKzCDR2yVY">
+            Demo Video
           </a>
-        </p> */}
+        </p>
       </div>
     ),
     img: testplatform,
