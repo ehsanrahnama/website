@@ -13,7 +13,8 @@ import Yolov5 from "../../public/images/yologo_2.png";
 import chatbot from "../../public/images/chatbot.jpg";
 import testplatform from "../../public/images/TestPlatform.png";
 import housekeeping from "../../public/images/article1_localize.png";
-import ConvertModel from "../../public/images/Convert.png"
+import ConvertModel from "../../public/images/Convert.png";
+import ObjectDetection from "../../public/images/detect_object.jpg"
 
 
 export const projectsData = [
@@ -180,9 +181,15 @@ export const projectsData = [
             detection.
           </li>
         </ul>
+
+        <p className="mt-6">
+         <a target="_blank" className="!font-bold  !text-blue-800" href="https://www.facebook.com/share/v/16fQgw5sC2/">Demo1 </a>
+         <a target="_blank" className="!font-bold  !text-blue-800" href="https://www.facebook.com/share/v/196SJWbTxZ/">Demo2 </a>
+         <a target="_blank" className="!font-bold  !text-blue-800" href="https://www.facebook.com/share/v/1CGXKD6qC2/">Demo3</a>
+        </p>
       </>
     ),
-    img: Yolov5,
+    img: ObjectDetection,
   },
   {
     title: "Convert Model to Other Frameworks and Deploy in Production",
