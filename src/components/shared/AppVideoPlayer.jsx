@@ -41,6 +41,9 @@ const AppVideoPlayer = (props) => {
         videos.vid.play();
         document.getElementById(cas + "c")?.classList.add("fa-pause");
         document.getElementById(cas + "c")?.classList.remove("fa-play");
+        // document.getElementById("play-icon")?.classList.remove("block");
+        document.getElementById("play-icon")?.classList.add("hidden");
+
         duration = videos.vid.duration;
         //interval
         videos.myInterval = setInterval(function () {
@@ -69,60 +72,82 @@ const AppVideoPlayer = (props) => {
         videos.vid.pause();
         document.getElementById(cas + "c")?.classList.remove("fa-pause");
         document.getElementById(cas + "c")?.classList.add("fa-play");
+        // document.getElementById("play-icon")?.classList.add("block");
+        document.getElementById("play-icon")?.classList.remove("hidden");
       }
     } else {
       console.log("error playing");
     }
   };
   return (
-    <div
-      className="react-basic-vid-skill"
-      style={{ width: props.size || 600, height: props.size || 600 }}
-    >
-      <div
-        className="outer"
+    <>
+      <svg
+        className="absolute top-1/2 left-1/2 z-10 cursor-pointer text-red-600 rotate-90 scale-[4]"
+        id="play-icon"
+        xmlns="http://www.w3.org/2000/svg"
+        width="16"
+        height="16"
+        fill="currentColor"
+        class="bi bi-triangle-fill"
+        viewBox="0 0 16 16"
         onClick={() => {
           play();
         }}
       >
+        <path
+          fill-rule="evenodd"
+          d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767z"
+        />
+      </svg>
+      <div
+        className="react-basic-vid-skill user-select-none"
+        style={{ width: props.size || 600, height: props.size || 600 }}
+      >
         <div
-          className="circular-loader no-round"
-          id={id + "h"}
-          style={{}}
-        ></div>
-        <div className="inner">
+          className="outer"
+          onClick={() => {
+            play();
+          }}
+        >
           <div
-            className="rc"
-            onClick={() => {
-              play();
-            }}
-          >
+            className="circular-loader no-round"
+            id={id + "h"}
+            style={{}}
+          ></div>
+          <div className="inner">
             <div
-              className="playPause"
+              className="rc"
               onClick={() => {
                 play();
               }}
-              style={{}}
             >
-              <i
-                className="fa fa-play"
+              <div
+                className="playPause"
                 onClick={() => {
                   play();
                 }}
-                id={id + "c"}
-              ></i>
+                style={{}}
+              >
+                <i
+                  className="fa fa-play"
+                  onClick={() => {
+                    play();
+                  }}
+                  id={id + "c"}
+                ></i>
+              </div>
+              <video
+                poster={poster}
+                src={props.src}
+                id={id}
+                className="videoCircle react-app-circular-vid"
+                playsInline={true}
+              ></video>
             </div>
-            <video
-              poster={poster}
-              src={props.src}
-              id={id}
-              className="videoCircle react-app-circular-vid"
-              playsInline={true}
-            ></video>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

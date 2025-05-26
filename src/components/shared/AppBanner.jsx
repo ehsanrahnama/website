@@ -68,13 +68,13 @@ function AppBanner() {
           initial={{ opacity: 0, y: -180 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ ease: "easeInOut", duration: 0.9, delay: 0.2 }}
-          className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0 p-15 justify-center items-center flex"
+          className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0 p-15 justify-center items-center flex relative"
         >
           <AppVideoPlayer
             size={600}
             poster="/website/images/ehsan.png"
             src={`https://ehsanrahnama.github.io/website/video/intro.webm`}
-            boundaryColor="#000082" 
+            boundaryColor="#000082"
             // #cfd4f0 #7277e7 #0000d8 #000082 #07357d"
           ></AppVideoPlayer>
         </motion.div>
