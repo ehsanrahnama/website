@@ -82,7 +82,7 @@ const AppVideoPlayer = (props) => {
   return (
     <>
       <svg
-        className="absolute top-1/2 left-1/2 z-10 cursor-pointer text-red-600 rotate-90 scale-[4]"
+        className="absolute top-1/2 left-1/2 z-10 cursor-pointer text-blue-800 rotate-90 scale-[4]"
         id="play-icon"
         xmlns="http://www.w3.org/2000/svg"
         width="16"
